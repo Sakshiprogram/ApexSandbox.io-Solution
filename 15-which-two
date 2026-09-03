@@ -1,14 +1,15 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
-    Integer sum = a+b;
+   
+ if(a+b == c){
+     return 'c';
+ }else if(a+c == b){
+     return 'b';
+ }else if(b+c == a){
+    return 'a';
+ }else {
+     return ' ';
+ }
 
-    if(a ==c){
-        return 'a';
-    }else if(b==c){
-        return 'c';
-    }else if(sum =c){
-        return 'a', 'b', 'c';
-    }else{
-        return ' ';
-    }
+   
 }
