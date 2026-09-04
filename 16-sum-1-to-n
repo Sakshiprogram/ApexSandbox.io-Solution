@@ -1,5 +1,5 @@
 public Integer sumToN(Integer n) {
     //code here
-   int sum = n*(n+1)/2;
+   int sum = (n*(n+1))/2;
    return sum;
 }
