@@ -6,5 +6,6 @@ public Integer sumToN(Integer n) {
        return sum;
    }else {
        Integer sum = n*(n+1)/2;
+       System.debug(sum);
    }
 }
