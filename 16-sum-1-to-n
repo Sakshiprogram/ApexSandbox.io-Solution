@@ -5,7 +5,7 @@ public Integer sumToN(Integer n) {
    if(n==0){
        return sum;
    }else {
-       Integer sum = n*(n+1)/2;
-       System.debug(sum);
+     sum = n*(n+1)/2;
+       return sum;
    }
 }
