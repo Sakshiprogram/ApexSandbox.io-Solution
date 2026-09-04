@@ -1,9 +1,10 @@
 public String evenOrOdd(Integer num) {
     //code here
-    int n = Math.mod(num,2);
+    int n = Math.mod(num);
 
-    if(n==0){
+    if(n/2 ==0){
         return 'even';
     }
     return 'odd';
+    
 }
