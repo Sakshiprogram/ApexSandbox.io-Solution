@@ -6,7 +6,6 @@ public String formatName(String firstName, String lastName) {
              return firstName;
     }else if(String.isNotBlank(lastName) ){
         return lastName;
-    }else{
-        return ' ';
     }
+    return ' ';
 }
