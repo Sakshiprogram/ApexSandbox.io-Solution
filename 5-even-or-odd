@@ -1,6 +1,6 @@
 public String evenOrOdd(Integer num) {
     //code here
-    int n = Math.mod(num);
+    Integer n = Math.mod(num);
 
     if(n/2 ==0){
         return 'even';
