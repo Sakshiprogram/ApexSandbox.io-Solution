@@ -1,7 +1,7 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
 
-     Boolean isCompanion(String plant1, String plant2){
+    //Boolean isCompanion(String plant1, String plant2){
          if((plant1== lettuce && plant2 == cucumber) || (plant2== lettuce && plant1 == cucumber)){
              return true;
          }
@@ -19,5 +19,5 @@ public Boolean companionPlants(String plant1, String plant2) {
          }
 
          return false;
-    }
+ //   }
 }
