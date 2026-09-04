@@ -1,6 +1,6 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
-        if(plant1==null && plant2==null){
+        if(plant1==null || plant2==null){
          return false;
      }
          if((plant1== 'lettuces' && plant2 == 'cucumbers') || (plant2== 'lettuces' && plant1 == 'cucumbers')){
