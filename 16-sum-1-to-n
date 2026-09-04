@@ -3,6 +3,6 @@ public Integer sumToN(Integer n) {
     if(n==0){
         return;
     }
-   int sum = n*(n+1)/2;
+   Integer sum = n*(n+1)/2;
    return sum;
 }
