@@ -1,7 +1,7 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
      
-    Boolean isCompanion(String plant1, String plant2){
+   public  Boolean isCompanion(String plant1, String plant2){
         if(plant1==null && plant2==null){
          return false;
      }
