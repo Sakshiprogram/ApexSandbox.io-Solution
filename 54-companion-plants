@@ -1,0 +1,9 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+
+    public Boolean isCompanion(String plant1, String plant2){
+         if(plant1.equalsto('onions') && plant2.equalsto('lettuce')){
+             return true;
+         }
+    }
+}
