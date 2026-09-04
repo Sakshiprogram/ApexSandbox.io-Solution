@@ -1,8 +1,10 @@
 public Integer sumToN(Integer n) {
     //code here
-    if(n==0){
-        return;
-    }
-   Integer sum = n*(n+1)/2;
-   return sum;
+   Integer sum=0;
+
+   if(n==0){
+       return sum;
+   }else {
+       Integer sum = n*(n+1)/2;
+   }
 }
