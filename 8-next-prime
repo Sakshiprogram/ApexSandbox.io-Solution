@@ -1,25 +1,28 @@
 public Integer nextPrime(Integer num) {
-    //code here
-  if(num<2){
-      return 2;
-  }
+    if (num < 2) {
+        return 2;
+    }
 
-  Integer candidate = num+1;
+    Integer candidate = num + 1;
 
-   while(true){
-       if(isPrime(candidate)){
-           return candidate;
-       }
-       candidate++;
-   }
+    while (true) {
+        // inline logic to check if candidate is prime
+        Boolean isCandidatePrime = true;
+        if (candidate <= 1) {
+            isCandidatePrime = false;
+        } else {
+            for (Integer i = 2; i < candidate; i++) {
+                if (Math.mod(candidate, i) == 0) {
+                    isCandidatePrime = false;
+                    break; // stop loop early, found a divisor
+                }
+            }
+        }
 
-   private Boolean isPrime(Integer n){
-       if(n<= 1) return false;
-       
-       for(Integer i=2; i<n; i++){
-           if(Math.mod(n,i)==0)
-           return false;
-       }
-       }
-   return true;
+        // if it passed the check, return it immediately
+        if (isCandidatePrime) {
+            return candidate;
+        }
+        candidate++;
+    }
 }
