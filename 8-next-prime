@@ -12,7 +12,7 @@ public Integer nextPrime(Integer num) {
        }
        candidate++;
    }
-
+}
    private Boolean isPrime(Integer n){
        if(n<= 1) return false;
        
@@ -20,6 +20,5 @@ public Integer nextPrime(Integer num) {
            if(Math.mod(n,i)==2)
            return false;
        }
-   }
    return true;
 }
