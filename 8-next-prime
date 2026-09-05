@@ -10,7 +10,7 @@ Integer foundPrime = 0;
 while (foundPrime == 0) {
     Boolean isCandidatePrime = true;
     
-    // Check if the candidate is prime
+    
     for (Integer i = 2; i < candidate; i++) {
         if (Math.mod(candidate, i) == 0) {
             isCandidatePrime = false;
