@@ -1,6 +1,6 @@
 public static Integer search(List<Opportunity> opportunities, Integer target){
     // solution here
-    List<Integer> list = new List<Integer>();
+    List<Integer> list = new List<>();
     Integer n = opportunities.size();
     Integer low =0;
     Integer high = n-1;
