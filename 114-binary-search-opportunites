@@ -1,23 +1,23 @@
 public static Integer search(List<Opportunity> opportunities, Integer target){
     // solution here
-    List<Integer> list = new List<>();
-    Integer n = opportunities.size();
+    
     Integer low =0;
-    Integer high = n-1;
-    list.add(high);
+    Integer high = opportunities.size() -1;
+    
 
     while(low<=high){
         Integer mid = low + (high -low)/2;
-        list.add(mid);
-        if(target == list.get(mid)){
-            list.add(mid);
-            return list;
-        } else if(target > list.get(mid)){
+
+        currentValue = (Integer) opportunities.get(mid);
+        
+        if(currentValue == target)){
+            return mid;
+        } else if(target > currentValue){
             high = mid-1;
         }else {
             low = mid +1;
         }
     }
-    list.add(-1);
-    return list;
+  
+    return -1;
 }
