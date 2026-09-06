@@ -12,12 +12,11 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
         
         if(currentValue == target)){
             return mid;
-        } else if(target > currentValue){
+        } else if(currentValue > target){
             high = mid-1;
         }else {
             low = mid +1;
         }
     }
-  
     return -1;
 }
