@@ -11,7 +11,7 @@ public static Integer search(List<Opportunity> opportunities, Integer target){
     while(low<=high){
         Integer mid = low + (high -low)/2;
 
-        Integer currentValue = (Integer) opportunities.get(mid);
+        Integer currentValue = (Integer) opportunities.get(mid).Amount;
         
         if(currentValue == target)){
             return mid;
