@@ -1,5 +1,8 @@
 public static Integer search(List<Opportunity> opportunities, Integer target){
     // solution here
+    if(opportunities == null || opportunities.isEmpty()){
+        return -1;
+    }
     
     Integer low =0;
     Integer high = opportunities.size() -1;
