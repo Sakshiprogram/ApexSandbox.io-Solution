@@ -1,0 +1,14 @@
+public static List<Integer> twoSum(List<Integer> nums, Integer target) {
+     //code here
+      HashMap<Integer> map = new HashMap<>();
+    
+     
+     for(Integer i=0; i<nums.size(); i++){
+         Integer x= nums[i];
+         Integer prefix =target-x;
+         if(map.containsKey(prefix)){
+             return list;
+         }
+         map.put(x,i);
+     }
+}
