@@ -1,6 +1,6 @@
 public static List<Integer> twoSum(List<Integer> nums, Integer target) {
      //code here
-      HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+      Map<Integer,Integer> map = new Map<Integer,Integer>();
     
      
      for(Integer i=0; i<nums.size(); i++){
