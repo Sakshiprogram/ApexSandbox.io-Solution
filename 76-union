@@ -8,7 +8,7 @@ public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
     }
        for(Integer num:set2){
            set.add(num);
-       }
+       
     }
     return set;
 }
