@@ -3,13 +3,14 @@ public static List<Integer> twoSum(List<Integer> nums, Integer target) {
      Map<Integer,Integer> map = new Map<Integer,Integer>();
 
      for(Integer i=0; i<nums.size(); i++){
-         Integer currentsum = nums.get(i);
-         Integer prefix = target - currentsum;
+      //   Integer currentsum = nums.get(i);
+         Integer n= nums.size();
+         Integer prefix = target - n;
 
          if(map.containsKey(prefix)){
              return new List<Integer>{map.get(prefix),i};
          }
-         map.put(currentsum,i);
+         map.put(n,i);
      }
      return new List<Integer>();
 }
