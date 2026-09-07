@@ -3,13 +3,12 @@ public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
     Set<Integer> set = new Set<Integer>();
     
 
-    for(Integer i:set1){
-        set.add(i);
+    for(Integer num1:set1){
+        set.add(num1);
     }
-
-    for(Integer i:set2){
-        if(set.contains(i))
-        set22.add(set2);
+       for(Integer num2:set2){
+           set.add(num2);
+       }
     }
-return set;
+    return set;
 }
