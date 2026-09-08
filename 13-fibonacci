@@ -3,14 +3,15 @@ public Integer fibonacci(Integer n) {
     if(n==1 || n==2){
         return 1;
     }
-   
+
     Integer first =0;
     Integer second =1;
-    Integer fib=0
-    for(Integer i=3; i<=n; i++){
-       fib = first+ second;
-       first = second;
-       second = fib;
+    Integer nthterm = 0;
+
+    for(Integer i=0; i<=n; i++){
+        nthterm = first + second;
+        first = second;
+        second =nthterm;
     }
-    return fib;
+    return second;
 }
