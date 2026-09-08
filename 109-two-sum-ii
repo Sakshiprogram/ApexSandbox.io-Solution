@@ -1,0 +1,21 @@
+public List<Integer> twoSum(List<Integer> nums, Integer target){
+    //code here
+    Integer n= nums.size();
+    Integer right =0;
+    Integer left=0;
+    Integer sum=0;
+    
+    while(left<=right){
+         sum += nums[left];
+        if(sum>target){
+            list.remove(left);
+            left++;
+        }
+        
+        if(sum==target){
+            return new List<Integer>({right,left});
+        }
+       right--;
+    }
+     return List<Integer>();
+}
