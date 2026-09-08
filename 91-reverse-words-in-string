@@ -15,7 +15,7 @@ public static String reverseWords(String str){
      }else {
          
          String temp =  ans[left];
-         ans[right] = ans[right];
+         ans[left] = ans[right];
          ans[right]= temp;
 
          left++;
