@@ -1,27 +1,27 @@
 public static String reverseWords(String str){
  // solution here 
  
- StringBuilder sb= new StringBuilder(str);
- Integer n = str.length();
+ List<String> ans = s.split(' ');
+ Integer n = ans.length();
  Integer right =n-1;
  Integer left = 0;
 
  while(left<right){
      
-     if(str.charAt(left) == ' '){
+     if(ans[left] == ' '){
          left++;
-     } else if(str.charAt(right) == ' '){
+     } else if(ans[right] == ' '){
          right--;
      }else {
          
-         char temp =  sb.charAt(left);
-         sb.setCharAt(left, right);
-         sb.setCharAt(right, temp);
+         String temp =  ans[left];
+         ans[right] = ans[right];
+         ans[right]= temp;
 
          left++;
          right--;
 
      } 
  }
- return sb.toString();
+ return String.join(ans,' ');
 }
