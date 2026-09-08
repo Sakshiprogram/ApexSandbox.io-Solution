@@ -4,27 +4,25 @@ public static String reverseWords(String str){
      return null;
  }
 
- List<String> ans = s.split(' ');
- Integer n = ans.size();
- Integer right =n-1;
- Integer left = 0;
+ List<String> words  = str.split(' ');
+ List<String> reverseWords = new List<String>();
 
- while(left<right){
-     
-     if(ans[left] == ' '){
-         left++;
-     } else if(ans[right] == ' '){
-         right--;
-     }else {
-         
-         String temp =  ans[left];
-         ans[left] = ans[right];
-         ans[right]= temp;
+ for(String word: words){
+   List<Integer> result = word.getChars();
 
-         left++;
-         right--;
+   Integer right = result.size()-1;
+   Integer left = 0;
 
-     } 
+   while(left<right){
+       Integer temp = result[left];
+       result[left] = result[right];
+       result[right] = temp;
+
+       left++;
+       right--;
+   }
+   reverseWords.add(String.fromCharArrays(result));
  }
- return String.join(ans,' ');
+
+ return String.join(reverseWords, ' ');
 }
