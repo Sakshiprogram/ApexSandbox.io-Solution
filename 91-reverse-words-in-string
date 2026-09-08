@@ -5,7 +5,7 @@ public static String reverseWords(String str){
  }
 
  List<String> ans = s.split(' ');
- Integer n = ans.length();
+ Integer n = ans.size();
  Integer right =n-1;
  Integer left = 0;
 
