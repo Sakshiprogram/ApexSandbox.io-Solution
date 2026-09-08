@@ -1,0 +1,16 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    if(n==1 || n==2){
+        return 1;
+    }
+   
+    Integer first =0;
+    Integer second =0;
+    Integer fib=0
+    for(Integer i=3; i<n; i++){
+       fib = first+ second;
+       first = second;
+       second = fib;
+    }
+    return fib;
+}
