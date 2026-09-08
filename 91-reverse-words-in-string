@@ -1,7 +1,7 @@
 public static String reverseWords(String str){
  // solution here 
- if(s == null){
-     return null;
+ if(String.isBlank(str)){
+     return str;
  }
 
  List<String> words  = str.split(' ');
@@ -21,7 +21,7 @@ public static String reverseWords(String str){
        left++;
        right--;
    }
-   reverseWords.add(String.fromCharArrays(result));
+   reverseWords.add(String.fromCharArray(result));
  }
 
  return String.join(reverseWords, ' ');
