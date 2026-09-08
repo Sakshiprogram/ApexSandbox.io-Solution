@@ -1,6 +1,6 @@
 public List<Integer> twoSum(List<Integer> nums, Integer target){
     //code here
-    List<Integer> ans = new List<>();
+    List<Integer> ans = new List<Integer>();
     Integer n= nums.size();
     Integer right =n-1;
     Integer left=0;
@@ -18,5 +18,5 @@ public List<Integer> twoSum(List<Integer> nums, Integer target){
             right--;
         }
     }
-     return new List<>();
+     return new List<Integer>();
 }
