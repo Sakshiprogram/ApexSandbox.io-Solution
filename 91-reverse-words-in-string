@@ -1,6 +1,9 @@
 public static String reverseWords(String str){
  // solution here 
- 
+ if(s == null){
+     return null;
+ }
+
  List<String> ans = s.split(' ');
  Integer n = ans.length();
  Integer right =n-1;
