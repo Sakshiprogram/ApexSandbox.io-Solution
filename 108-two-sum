@@ -2,7 +2,7 @@ public static List<Integer> twoSum(List<Integer> nums, Integer target) {
      //code here
      Map<Integer,Integer> map = new Map<Integer,Integer>();
 
-     for(Integer i=0; ; ++i){
+     for(Integer i=0; i<nums.length; ++i){
          Integer currentsum = nums.get(i);
          Integer prefix = target - currentsum;
 
