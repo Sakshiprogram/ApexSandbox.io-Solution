@@ -1,15 +1,17 @@
 public static List<Integer> twoSum(List<Integer> nums, Integer target) {
      //code here
-     Map<Integer,Integer> map = new Map<Integer,Integer>();
+     for (Integer i = 0; i < nums.size(); i++) {
+    Integer currentNum = nums.get(i);
+    Integer complement = target - currentNum;
 
-     for(Integer i=0; i<nums.size(); i++){
-         Integer currentsum = nums.get(i);
-         Integer prefix = target - currentsum;
 
-         if(map.containsKey(prefix)){
-             return new List<Integer>{map.get(prefix),i};
-         }
-         map.put(currentsum,i);
-     }
-     return new List<Integer>();
+    if (numMap.containsKey(complement)) {
+        return new List<Integer>{numMap.get(complement), i};
+    }
+    
+    
+    numMap.put(currentNum, i);
+}
+
+return new List<Integer>();
 }
