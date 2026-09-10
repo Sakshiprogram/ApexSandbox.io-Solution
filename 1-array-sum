@@ -1,0 +1,10 @@
+public static Integer arraySum(List<Integer> numbers) {
+    //code here
+    Integer sum = 0;
+    Integer n = numbers.size();
+
+    for(Integer i=0; i<n; i++){
+        sum += numbers[i];
+    }
+    return sum;
+}
