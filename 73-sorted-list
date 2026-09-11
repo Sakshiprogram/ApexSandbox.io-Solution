@@ -1,5 +1,9 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
+
+    boolean isAscending = true;
+    boolean isDescending = true;
+
      if (numbers == null || numbers.size() <= 1) {
         return true;
     }
@@ -7,8 +11,15 @@ public boolean isSorted(List<Integer> numbers) {
 
     for(int i=0; i<numbers.size()-1; i++){
         if( numbers.get(i) > numbers.get(i+1)) {
-            return false;
+            isAscending = false;
         }
+
+        if( numbers.get(i) < numbers.get(i+1)) {
+            isDescending = false;
+        }
+       if(!isAscending && !isDescending){
+           return false;
+       }
     }
-    return true;
+    return isAscending || isDescending;
 }
