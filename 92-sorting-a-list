@@ -3,6 +3,6 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     //code here
     List<String> ans= new List<String>();
 
-    ans.sort(accountNames);
+    ans.sort();
     return accountNames;
 }
