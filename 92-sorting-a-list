@@ -4,7 +4,7 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
         return List<String>();
     }
     //code here
-    List<String> ans= new List<String>();
+    List<String> ans= new List<String>(accountNames);
 
     ans.sort();
     return ans;
