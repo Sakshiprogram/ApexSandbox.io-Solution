@@ -10,5 +10,5 @@ public Decimal average(List<Decimal> numbers){
       average = sum/n;
       Decimal roundValue = average.setScale(average,2);
    }
-   return average;
+   return roundValue;
 }
