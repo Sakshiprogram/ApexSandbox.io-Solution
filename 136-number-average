@@ -9,5 +9,5 @@ public Decimal average(List<Decimal> numbers){
       sum += numbers.get(i);
       average = sum/n;
    }
-   return average;
+   return setScale(average);
 }
