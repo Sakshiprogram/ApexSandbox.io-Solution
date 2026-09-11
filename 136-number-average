@@ -4,11 +4,12 @@ public Decimal average(List<Decimal> numbers){
   Integer n= numbers.size();
   Decimal sum =0;
   Decimal average =0;
+  Decimal roundValue =0;
    
    for(Integer i=0; i<n; i++ ){
       sum += numbers.get(i);
       average = sum/n;
-      Decimal roundValue = average.setScale(2);
+       roundValue = average.setScale(2);
    }
    return roundValue;
 }
