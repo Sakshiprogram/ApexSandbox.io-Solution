@@ -8,6 +8,7 @@ public Decimal average(List<Decimal> numbers){
    for(Integer i=0; i<n; i++ ){
       sum += numbers.get(i);
       average = sum/n;
+      setScale(average);
    }
-   return setScale(average);
+   return average;
 }
