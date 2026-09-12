@@ -4,10 +4,10 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer secondLargest = -2147483647 - 1;
 
     for(Integer i=0; i<numbers.size(); i++){
-        if(numbers.get(i) > numbers.get(i+1)){
+        if(numbers.get(i) > largest){
             secondLargest =largest;
-            numbers.get(i) = numbers.get(i+1);
-        } else if(secondLargest<largest && secondLargest !=largest){
+            largest = numbers.get(i);
+        } else if(numbers.get(i)> secondLargest && numbers.get(i) != largest){
                 secondLargest= numbers.get(i);
         }
     }
